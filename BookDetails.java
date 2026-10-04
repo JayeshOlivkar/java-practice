@@ -2,8 +2,9 @@ package test;
 
 import java.util.Scanner;
 
-public class book {
+public class BookDetails {
 	public static void main(String[] args) {
+		// Demonstration of Scanner, different data types and basic calculation
 		Scanner scan=new Scanner(System.in);
 		
 		System.out.print("Enter Book ID: ");
