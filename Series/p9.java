@@ -1,0 +1,14 @@
+package series;
+
+import java.util.Scanner;
+
+public class p9 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int y=sc.nextInt();
+		for(int i=1;i<=10;i++) {
+			System.out.println(y*i);
+		}
+		sc.close();
+	}
+}
