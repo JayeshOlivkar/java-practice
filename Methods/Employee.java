@@ -1,4 +1,4 @@
-package MethodHM;
+package TypesOfMethodsHM;
 
 import java.util.Scanner;
 
@@ -6,6 +6,9 @@ public class Employee {
 	int id, age;
 	String name, designation, qualification, city;
 	double salary;
+	
+	double pt=(salary*12)/100;
+	double pf=(salary*10)/100;
 
 	public void AcceptData() {
 		Scanner sc = new Scanner(System.in);
@@ -29,6 +32,21 @@ public class Employee {
 		System.out.println();
 		sc.close();
 	}
+	
+	public double gSalary() {
+		double da=(salary*5)/100;
+		double hra=(salary*15)/100;
+		double tra=(salary*10)/100;
+		double gross_salary=salary+da+hra+tra;
+		return gross_salary;
+	}
+	
+	public double nSalary() {
+		double pt=(salary*12)/100;
+		double pf=(salary*10)/100;
+		double net_salary=gSalary()-(pf+pt);
+		return net_salary;
+	}
 
 	public void Show() {
 		System.err.println("*****Employee Details*****");
@@ -39,6 +57,7 @@ public class Employee {
 		System.out.println("Qualification: " + qualification);
 		System.out.println("Employee Age: " + age);
 		System.out.println("City: " + city);
+		System.out.println("Gross Salary: "+ gSalary());
+		System.out.println("Net Salary: "+nSalary());
 	}
-
 }
