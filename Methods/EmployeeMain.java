@@ -1,9 +1,9 @@
-package MethodHM;
+package TypesOfMethodsHM;
 
 public class EmployeeMain {
 	public static void main(String[] args) {
-		Employee emp=new Employee();
-		emp.AcceptData();
-		emp.Show();
+		Employee e=new Employee();
+		e.AcceptData();
+		e.Show();
 	}
 }
